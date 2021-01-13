@@ -1,0 +1,128 @@
+
+
+/*Hero Section STARTED */
+
+.forum-hero-section {
+    background:  linear-gradient(#000000, transparent), url(/Images/adult-african-american-people-black-women-business-1181605.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    form {
+        width: 100%;
+         
+         input {
+             margin-top: 5px;
+             background: none;
+
+             &::placeholder {
+                 color: $green;
+                 font-weight: 700;
+             }
+         }
+
+         .forum-formButton {
+             background: $green;
+             text-transform: uppercase;
+             font-size: 22px;
+             border: none;
+             width: 200px;
+         }
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        color: white;
+        
+        @include desktop {
+            width: 70%;
+        }
+        
+        .hero-big-text {
+            font-weight: 900;
+        }
+
+        .hero-subtext {
+            font-weight: 500;
+        }
+
+        .hero-button {
+            background-color: $green;
+            border: none;
+        }
+
+    }
+}
+
+// Forum Search
+
+.forum-search {
+       width: 100%;
+        
+       &-input {
+           border: solid;
+           width: 250px;
+           height: auto;
+           border-radius: 20px;
+           border-color: $green;
+           
+       
+
+       input {
+           border: none;
+           outline: none;
+       }
+
+       button {
+           background: none;
+           outline: none;
+           border: none;
+
+           .fa-search {
+               color: $green;
+           }
+       }
+}
+
+}
+
+// Forum Table 
+
+.table {
+    margin:20px auto;
+
+    thead {
+        background-color:$green;
+
+        th {
+            font-size: 20px;
+        }
+        
+    }
+
+    tbody {
+        background-color: wheat;
+          
+          tr {
+              border-top-style: solid;
+              border-top-color: $green;
+          }
+
+        .refreshness-image img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    }
+}
+   
+
+
+// Others
+   .writer-date, .read-more {
+       display: block;
+   }
+
+   

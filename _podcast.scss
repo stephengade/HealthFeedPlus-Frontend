@@ -1,0 +1,73 @@
+
+
+/*Hero Section STARTED */
+
+.podcast-hero-section {
+    background: url(/Images/greyscale-photography-of-condenser-microphone-765139.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        color: white;
+        
+        @include desktop {
+            width: 70%;
+        }
+        
+        .hero-big-text {
+            font-weight: 900;
+        }
+
+        .hero-subtext {
+            font-weight: 500;
+        }
+
+        .hero-button {
+            background-color: $green;
+            border: none;
+        }
+
+    }
+}
+
+
+    // Exclucive Section
+
+    .exclusive-section {
+        width: 100%;
+        background: linear-gradient($green, transparent), url('/Images/woman-holding-red-book-binder-3762803.png');
+        background-size: cover;
+        background-position: center;
+
+        .exclucive-title {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+
+          .exclusive-topic {
+            font-size: 25px;
+            font-weight: 900;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+             
+        .star-rating {
+            padding-bottom: 60px;
+        }
+
+    }
+
+   .writer-date, .read-more {
+       display: block;
+   }
+
+   
