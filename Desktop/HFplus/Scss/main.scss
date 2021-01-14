@@ -1,0 +1,466 @@
+@import './reset';
+@import './variables';
+@import './shop';
+@import './podcast';
+@import './forum';
+
+body {
+    font-family: 'Cardo', serif;
+}
+
+header {
+    background-color: #ffffff;
+   
+    
+   
+   nav {
+       width: 100%;
+
+       .header-logo {
+           height: 70px;
+           margin-top: .5rem;
+           width: 150px;
+       }
+      
+       a {
+           color: $link-color;
+
+           &:hover {
+               color: $hover-color;
+           }
+       }
+   }
+
+   .navbar-nav {
+       margin-left: auto;
+       margin-top: .5rem;
+
+       li {
+           margin-right: 25px;
+       }
+   }
+
+   .header-right-icons {
+       margin-right: 20px;
+       margin-top: .5rem;
+
+       i {
+           margin-right: 20px;
+           cursor: pointer;
+
+           &:hover {
+               color: $hover-color;
+           }
+       }
+   }
+}
+
+/*Hero Section STARTED */
+
+.hero-section {
+    background: url(/Images/MaskGroup1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        color: white;
+        
+        @include desktop {
+            width: 70%;
+        }
+        
+        .hero-big-text {
+            font-weight: 900;
+        }
+
+        .hero-subtext {
+            font-weight: 500;
+        }
+
+        .hero-button {
+            background-color: $green;
+            border: none;
+        }
+
+    }
+}
+
+// Featured Topic
+
+.featured-topic {
+    margin-top: -40px;
+    background-color: #ffffff;
+    
+  h1 {
+      text-transform: capitalize;
+      font-size: 1.6rem;
+
+      @include desktop {
+          margin-top: -30px;
+      }
+  }
+
+  p {
+      font-size: 1rem;
+      color: $green;
+  }
+}
+  // Featured Grid 
+
+.featured-grid {
+    margin-top: -120px;
+    width: 80vw;
+
+    a:hover {
+        text-decoration-color: $green;
+    }
+    
+// Fitness
+
+    .fitness {
+          width: 100%;
+        background: linear-gradient($black-layer, transparent), url('/Images/woman-wearing-black-sports-bra-and-jogger-shorts-smiling-936075.png');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+
+        h3 {
+            color: #ffffff;
+             font-weight: 900;
+             padding-top:25%;
+             text-transform: uppercase;
+
+             @include desktop {
+                 padding-top: 30%;
+             }
+        }
+    }
+
+// Wellness
+
+    .wellness {
+          width: 100%;
+        background: linear-gradient($black-layer, transparent), url('/Images/smiling-students-discussing-day-in-college-4172961.png');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+
+        h3 {
+            color: #ffffff;
+             font-weight: 900;
+             padding-top:25%;
+             text-transform: uppercase;
+
+             @include desktop {
+                 padding-top: 30%;
+             }
+        }
+    }
+
+// Nutrition
+
+.nutrition {
+          width: 100%;
+        background: linear-gradient($black-layer, transparent), url('/Images/person-holding-green-leafed-plant-2280551.png');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+
+        h3 {
+            color: #ffffff;
+             font-weight: 900;
+             padding-top:25%;
+             text-transform: uppercase;
+
+             @include desktop {
+                 padding-top: 30%;
+             }
+        }
+    }
+
+// Mental 
+
+.mental {
+          width: 100%;
+        background: linear-gradient($black-layer, transparent), url('/Images/computer-desk-laptop-stethoscope-48604.png');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+
+        h3 {
+            color: #ffffff;
+             font-weight: 900;
+             padding-top:25%;
+             text-transform: uppercase;
+
+             @include desktop {
+                 padding-top: 20%;
+             }
+        }
+    }
+
+// Podcast
+
+.podcast {
+          width: 100%;
+        background: linear-gradient($black-layer, transparent), url('/Images/greyscale-photography-of-condenser-microphone-765139.png');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+
+        h3 {
+            color: #ffffff;
+             font-weight: 900;
+             padding-top:25%;
+             text-transform: uppercase;
+
+             @include desktop {
+                 padding-top: 20%;
+             }
+        }
+    }
+
+
+}
+
+
+    
+    // Contribute Section 
+
+    .contribute-section {
+     background: linear-gradient($green, transparent), url('/Images/computer-desk-laptop-stethoscope-48604.png');
+     background-size: cover;
+
+        padding: 50px 0;
+        margin-top: 20px;
+        
+        .video-thumbnail {
+        height: 300px;
+        width:  300px;
+    }
+         
+         .contri-text {
+             color: $text-color;
+             margin-top: 15px;
+             
+             @include desktop {
+                 margin-top: 30px;
+                 text-align: left;
+             }
+                h3 {
+                    font-size: 30px;
+                }
+
+                p {
+                    line-height: 25px;
+                }
+         }
+         
+        }
+    
+
+    // Editor section 
+
+    .editor-section {
+       background-color: whitesmoke;
+
+       .editor-heading {
+           font-size: 25px;
+           font-weight: bolder;
+       }
+    
+
+    .editor-post {
+        text-align: left;
+
+        h4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-top: 8px;
+        }
+
+        .writer-date {
+            font-size: 11px;
+            font-weight: bold;
+
+            a {
+                color: $green;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+        }
+
+        .read-more {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: -3px;
+
+            a {
+                color: $green;
+
+                &:hover {
+                    color: $primary-color;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    }
+
+    // Quote Section 
+
+    .home-quote {
+        background: url(/Images/asset1.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 100px 0;
+    }
+
+    // Exclucive Section
+
+    .exclusive-section {
+        width: 100%;
+        background: linear-gradient($green, transparent), url('/Images/woman-holding-red-book-binder-3762803.png');
+        background-size: cover;
+        background-position: center;
+
+        .exclucive-title {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+
+          .exclusive-topic {
+            font-size: 25px;
+            font-weight: 900;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+             
+        .star-rating {
+            padding-bottom: 60px;
+        }
+
+    }
+
+    // BLOG Section 
+
+    .blog-section {
+        background-color: #ffffff;
+        cursor: pointer;
+
+         .blog-heading {
+            margin: 0 auto;
+            font-size: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            &:hover {
+                color: $green;
+            }
+         }
+.writer-date, .read-more {
+             display: none;
+         }
+         
+    }
+
+    // Newsletter Section
+
+    .newsletter-section {
+         width: 100%;
+        background: linear-gradient($primary-color, transparent), url('/Images/Mask\ Group\ 4.png');
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+         .newsletter-logo {
+             width: 150px;
+         }
+
+        input {
+            font-weight: 700;
+        }
+    }
+
+    // First Footer section 
+
+.footer-section-1 {
+    width: 100%;
+    background-color: $primary-color;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+
+    a {
+        color: white;
+
+        &:hover {
+            color: $green;
+        }
+    }
+  
+  .footer-about {
+      width: 100%;
+      text-align: left;
+       
+       h3 {
+           font-weight: 900;
+           color: $green;
+       }
+
+       a {
+           color: $green;
+       }
+  } 
+
+  .footer-social {
+       h3 {
+           font-weight: 900;
+           color: $green;
+       }
+
+       a {
+           color: $green;
+       }
+
+       i {
+      color: #ffffff;
+      font-size: 30px;
+      padding-left: 15px;
+      margin-top: 5px;
+
+      &:hover {
+          color: $green;
+      }
+  }
+
+  
+  }
+
+}
+
+// Last Footer 
+
+.footer-2 {
+    background-color: #000;
+    color: #fff;
+}
